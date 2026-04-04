@@ -1,0 +1,132 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Norwester';
+	src: url('$lib/assets/fonts/Norwester.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Geologica';
+	src: url('$lib/assets/fonts/Geologica.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--breakpoint-2xs: 320px;
+	--breakpoint-xs: 390px;
+
+	--font-sans: 'Geologica', ui-sans-serif, system-ui, sans-serif;
+	--font-display: 'Norwester', ui-sans-serif, system-ui, sans-serif;
+
+	--color-primary: #0a0b13;
+	--color-primary-dark: #1c1c29;
+	--color-secondary: #e6e6e6;
+	--color-yellow: #f0c651;
+	--color-gray: #787892;
+	--color-dark-gray: #1b1b27;
+	--color-purple: #e54e5e;
+	--color-sky: #01c5f6;
+}
+
+@layer base {
+	body {
+		@apply bg-primary font-sans text-secondary;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-display;
+	}
+
+	img {
+		@apply size-full object-contain;
+	}
+}
+
+@layer components {
+	/* Section */
+	.section {
+		@apply relative mx-auto flex max-w-2xs flex-col 2xs:max-w-xs xs:max-w-sm lg:max-w-6xl;
+	}
+
+	.section-title {
+		@apply font-display text-[80px] leading-none tracking-tight uppercase lg:text-[150px];
+	}
+
+	.section-description {
+		@apply text-base leading-tight font-normal lg:text-[22px];
+	}
+
+	.section-divider {
+		@apply absolute top-0 left-1/2 h-[1875px] w-px -translate-x-1/2;
+		background-image: repeating-linear-gradient(
+			to bottom,
+			#343448 0,
+			#343448 16px,
+			transparent 16px,
+			transparent 28px
+		);
+	}
+
+	/* Buttons */
+	.btn {
+		@apply inline-flex min-h-16 cursor-pointer items-center justify-center rounded-xl px-8 text-[22px] font-medium transition hover:scale-105 lg:min-h-20;
+	}
+
+	.btn-secondary {
+		@apply bg-dark-gray text-secondary;
+	}
+
+	.btn-primary {
+		@apply bg-yellow font-display text-primary-dark uppercase;
+	}
+
+	.btn-size--lg {
+		@apply min-h-24 text-[26px];
+	}
+
+	/* Components */
+	.badge {
+		@apply rounded-xl border-4 border-primary px-2.5 font-display text-xl tracking-wide whitespace-nowrap text-primary uppercase lg:text-[26px];
+
+		background: linear-gradient(90deg, #f0c651 0%, #f2b740 100%);
+	}
+
+	.egg-image {
+		@apply mx-auto size-20 lg:size-28;
+	}
+
+	/* Other */
+
+	.pvp-experience-item {
+		@apply flex max-w-[280px] min-w-[280px] flex-1 flex-col items-center;
+	}
+
+	.pvp-experience-image {
+		@apply flex h-60 w-full items-center justify-center;
+	}
+
+	.pvp-experience-image-inner {
+		@apply relative h-44 w-full max-w-[220px] md:h-52 md:max-w-[260px];
+	}
+
+	.pvp-experience-image-item {
+		@apply absolute top-0 left-0 z-10;
+	}
+	.pvp-experience-image-glow {
+		@apply absolute top-0 left-0;
+	}
+
+	.pvp-experience-description {
+		@apply -mt-4 max-w-[150px] text-center font-display text-[30px] leading-tight uppercase lg:mt-0 lg:max-w-none lg:text-[35px];
+	}
+}
