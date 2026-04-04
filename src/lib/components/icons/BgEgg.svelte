@@ -6,19 +6,20 @@
 		left = 0,
 		right = 0,
 		height = 500,
-		isMirrored = false
+		isMirrored = false,
+		isMobile = false
 	} = $props();
 </script>
 
 <div
-	class={className}
+	class="{isMobile ? 'block lg:hidden' : 'hidden lg:block'} {className}"
 	class:-scale-x-100={isMirrored}
 	style="
-	position: {position};
-	height: {height}px;
-	top: {top}px;
-	{left ? `left: ${left}px;` : ''}
-	{right ? `right: ${right}px;` : ''}
+		position: {position};
+		height: {height}px;
+		top: {top}px;
+		{left ? `left: ${left}px;` : ''}
+		{right ? `right: ${right}px;` : ''}
 	"
 >
 	<img src="/images/icons/bg-egg.png" alt="Egg" />

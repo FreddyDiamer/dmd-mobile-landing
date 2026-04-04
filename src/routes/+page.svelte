@@ -8,28 +8,30 @@
 	import BgIcons from '$lib/components/base/BgIcons.svelte';
 </script>
 
-<!-- <BgIcons /> -->
+<div class="relative overflow-hidden">
+	<BgIcons />
 
-<header>
-	<h1 class="mb-10 p-12 text-center font-display text-4xl uppercase">
-		Ducky <span class="text-yellow">DUCK</span>
-	</h1>
+	<header>
+		<h1 class="mb-10 p-12 text-center font-display text-4xl uppercase">
+			Ducky <span class="text-yellow">DUCK</span>
+		</h1>
 
-	<HeroSection />
-</header>
+		<HeroSection />
+	</header>
 
-<main class="relative mt-24 mb-20 flex flex-col overflow-hidden lg:mt-40">
-	<div class="section-divider hidden lg:block"></div>
+	<main class="relative mt-24 mb-20 flex flex-col overflow-hidden lg:mt-40">
+		<div class="section-divider hidden lg:block"></div>
 
-	<MergeEggsSection />
-	<BreedDucksSection />
-	<CommunitySection />
+		<MergeEggsSection />
+		<BreedDucksSection />
+		<CommunitySection />
 
-	<div class="h-[100px] lg:h-[120px]">
-		<img src="/images/corn.png" alt="Corn" />
-	</div>
+		<div class="h-[100px] lg:h-[120px]">
+			<img src="/images/corn.png" alt="Corn" />
+		</div>
 
-	<PvpExperienceSection />
+		<PvpExperienceSection />
 
-	<StoreButtons class="mx-auto" />
-</main>
+		<StoreButtons class="mx-auto" />
+	</main>
+</div>

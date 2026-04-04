@@ -6,12 +6,13 @@
 		top = 0,
 		left = 0,
 		right = 0,
-		isMirrored = false
+		isMirrored = false,
+		isMobile = false
 	} = $props();
 </script>
 
 <div
-	class={className}
+	class="{isMobile ? 'block lg:hidden' : 'hidden lg:block'} {className}"
 	class:-scale-y-100={isMirrored}
 	class:-scale-x-100={isMirrored}
 	style="
