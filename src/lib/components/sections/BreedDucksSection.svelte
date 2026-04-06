@@ -6,7 +6,7 @@
 	<div class="relative mx-auto grid grid-cols-1 items-center gap-0 lg:grid-cols-2 lg:gap-28">
 		<div class="relative -mr-32 h-[400px] -translate-x-20 lg:h-[800px] lg:translate-x-0">
 			<img
-				class="absolute top-0 left-10 scale-150"
+				class="glow-image translate-x-[4%] scale-150"
 				src="/images/glow/purple.png"
 				alt=""
 				aria-hidden="true"

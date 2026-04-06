@@ -20,7 +20,11 @@
 		<div
 			class="relative order-1 ml-0 h-[400px] translate-x-4 lg:order-2 lg:-ml-24 lg:h-[800px] lg:translate-x-0"
 		>
-			<img class="absolute top-0 -left-10 scale-150" src="/images/glow/blue.png" alt="Blue glow" />
+			<img
+				class="glow-image -translate-x-[8%] scale-150"
+				src="/images/glow/blue.png"
+				alt="Blue glow"
+			/>
 			<img class="absolute top-0 left-0" src="/images/merge-eggs.png" alt="Merge ducky duck eggs" />
 		</div>
 	</div>

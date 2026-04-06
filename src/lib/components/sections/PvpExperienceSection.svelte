@@ -15,11 +15,7 @@
 						src="/images/duck-upgrade.png"
 						alt="Duck upgrade"
 					/>
-					<img
-						class="pvp-experience-image-glow scale-150"
-						src="/images/glow/purple.png"
-						alt="Purple glow"
-					/>
+					<img class="glow-image scale-200" src="/images/glow/purple.png" alt="Purple glow" />
 				</div>
 			</div>
 			<p class="pvp-experience-description">Upgrade your ducks</p>
@@ -37,11 +33,7 @@
 			<div class="pvp-experience-image">
 				<div class="pvp-experience-image-inner">
 					<img class="pvp-experience-image-item" src="/images/trophy.png" alt="Trophy" />
-					<img
-						class="pvp-experience-image-glow scale-[2.2]"
-						src="/images/glow/green.png"
-						alt="Green glow"
-					/>
+					<img class="glow-image scale-[2.2]" src="/images/glow/green.png" alt="Green glow" />
 				</div>
 			</div>
 			<p class="pvp-experience-description">Crush your rivals</p>
@@ -60,7 +52,7 @@
 				<div class="pvp-experience-image-inner">
 					<img class="pvp-experience-image-item" src="/images/resources.png" alt="Resources" />
 					<img
-						class="pvp-experience-image-glow scale-[2.5]"
+						class="glow-image scale-[2.5]"
 						src="/images/glow/turquoise.png"
 						alt="Turquoise glow"
 					/>

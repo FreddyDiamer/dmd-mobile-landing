@@ -77,6 +77,20 @@
 		);
 	}
 
+	@keyframes rays-rotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.glow-image {
+		@apply absolute top-0 left-0;
+		animation: rays-rotate 10s linear infinite;
+	}
+
 	/* Buttons */
 	.btn {
 		@apply inline-flex min-h-16 cursor-pointer items-center justify-center rounded-xl px-8 text-[22px] font-medium transition hover:scale-105 lg:min-h-20;
@@ -121,9 +135,6 @@
 
 	.pvp-experience-image-item {
 		@apply absolute top-0 left-0 z-10;
-	}
-	.pvp-experience-image-glow {
-		@apply absolute top-0 left-0;
 	}
 
 	.pvp-experience-description {
