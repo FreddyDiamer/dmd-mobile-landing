@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { INSTAGRAM_LINK, TELEGRAM_LINK, YOUTUBE_LINK } from '$lib/constants/links';
+
 	const avatars = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as const;
 </script>
 
@@ -49,28 +51,18 @@
 	</div>
 
 	<div class="mx-auto mt-14 flex flex-wrap items-end justify-center gap-8">
-		<a
-			class="btn btn-secondary"
-			href="https://www.instagram.com/"
-			rel="noopener noreferrer"
-			target="_blank"
-		>
+		<a class="btn btn-secondary" href={INSTAGRAM_LINK} rel="noopener noreferrer" target="_blank">
 			Instagram
 		</a>
 		<a
 			class="btn btn-primary btn-size--lg"
-			href="https://t.me/"
+			href={TELEGRAM_LINK}
 			rel="noopener noreferrer"
 			target="_blank"
 		>
 			Join our community
 		</a>
-		<a
-			class="btn btn-secondary"
-			href="https://www.youtube.com/"
-			rel="noopener noreferrer"
-			target="_blank"
-		>
+		<a class="btn btn-secondary" href={YOUTUBE_LINK} rel="noopener noreferrer" target="_blank">
 			Youtube
 		</a>
 	</div>

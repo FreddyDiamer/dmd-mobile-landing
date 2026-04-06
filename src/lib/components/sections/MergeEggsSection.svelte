@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { storeHref } from '$lib/stores/storeHref';
+</script>
+
 <section class="section" aria-labelledby="merge-heading">
 	<div class="egg-image">
 		<img src="/images/egg/1.png" alt="Egg" />
@@ -14,7 +18,9 @@
 				Combine <span class="text-sky">matching</span> eggs to level them up. Higher levels unlock better
 				loot and new ducks.
 			</p>
-			<button class="btn btn-secondary">Let's merge</button>
+			<a href={$storeHref} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+				Let's merge
+			</a>
 		</div>
 
 		<div

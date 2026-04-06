@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { storeHref } from '$lib/stores/storeHref';
+</script>
+
 <section class="section mt-24 lg:mt-0" aria-labelledby="breed-heading">
 	<div class="egg-image">
 		<img src="/images/egg/2.png" alt="Egg" />
@@ -24,7 +28,14 @@
 				<span class="text-purple">Breed with other players</span> to get Love Eggs and a chance to hatch
 				a new duck.
 			</p>
-			<button class="btn btn-secondary relative z-10">Try it now</button>
+			<a
+				href={$storeHref}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn btn-secondary relative z-10"
+			>
+				Try it now
+			</a>
 		</div>
 	</div>
 
